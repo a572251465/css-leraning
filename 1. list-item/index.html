@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>list-item</title>
+  <style>
+    .clear:after {
+        display: list-item;
+        content: '';
+        clear: both;
+    }
+
+    .left {
+        width: 200px;
+        height: 100px;
+        border: 1px solid red;
+        margin-right: 20px;
+        float: left;
+    }
+
+    .container {
+        border: 1px solid black;
+    }
+
+    .container1 {
+        width: 300px;
+        height: auto;
+    }
+
+    .list-item {
+        display: list-item;
+        width: 100%;
+        height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container clear">
+    <div class="left"></div>
+    <div class="left"></div>
+    <div class="left"></div>
+  </div>
+  <div class="container1">
+    <span class="list-item">111</span>
+    <span class="list-item">222</span>
+    <span class="list-item">333</span>
+  </div>
+</body>
+</html>
