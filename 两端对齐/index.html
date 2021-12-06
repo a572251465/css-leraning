@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>两端对齐效果</title>
+  <style>
+    .box {
+        width: 256px;
+        height: 256px;
+        border-bottom: 1px dashed #ccc;
+        text-align: justify;
+    }
+
+    .bar {
+        display: inline-block;
+        width: 20px;
+        height: 100px;
+        background: green;
+    }
+
+    .box:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+    }
+
+    .box:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <i class="bar"></i>
+    <i class="bar"></i>
+    <i class="bar"></i>
+    <i class="bar"></i>
+    <i class="bar"></i>
+  </div>
+</body>
+</html>
