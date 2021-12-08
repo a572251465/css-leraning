@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实现加号</title>
+  <style>
+    .add {
+      display: inline-block;
+      width: 76px; height: 76px;
+      color: #ccc;
+      border: 2px dashed;
+      text-indent: -12em;
+      transition: color .25s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .add::before, .add::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+    .add::before {
+      width: 20px;
+      border-top: 4px solid;
+      margin: -2px 0 0 -10px;
+    }
+    .add::after {
+      height: 20px;
+      border-left: 4px solid;
+      margin: -10px 0 0 -2px;
+    }
+    .add:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <a class="add"></a>
+</body>
+</html>
